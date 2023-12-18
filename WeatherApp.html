@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="WeatherAPI.css">
+  <title> Weather App using openweathermap </title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <h1>Weather App</h1>
+    <div class="tab-container">
+      <p class="tab" data-userWeather>Your Weather</p>
+      <p class="tab" data-searchWeather>Search Weather</p>
+    </div>
+    <div class="weatherContainer">
+      <!-- Grant Location Access Page Container -->
+      <div class="grantLocationContainer">
+        <img src="location.png" alt="Location Image" height="80" width="80" loading="lazy">
+        <p>Grant Location Access</p>
+        <p>Allow access to get Weather Info</p>
+        <button class="btn" data-grantAccess>Grant Access</button>
+      </div>
+      <!-- Search  Form -->
+      <form class="form-conatiner" data-searchForm>
+        <input placeholder="Search for City..." data-searchInput>
+        <button class="btn" type="submit">
+          <img src="search.png" alt="Search Image" height="20" width="20" loading="lazy">
+        </button>
+      </form>
+      <!-- Loading Screen Container -->
+      <div class="loadingContainer">
+        <img src="loading.gif" alt="Loading GIF" height="150" width="150">
+        <p>LOADING...</p>
+      </div>
+      <!-- Show Weather Information -->
+      <div class="userInfoContainer">
+        <!-- CITY Name Flag Alll are dynamic -->
+        <div class="name">
+          <p data-cityName></p>
+          <img data-countryIcon>
+        </div>
+        <p data-weatherDesc></p>
+        <img data-weatherIcon>
+        <p data-temp> </p>
+        <div class="param-container">
+          <div class="param">
+            <img src="wind.png" alt="WIND">
+            <p>windspeed</p>
+            <p data-windspeed></p>
+          </div>
+          <div class="param">
+            <img src="humidity.png" alt="Humidity">
+            <p>Humidity</p>
+            <p data-humidity></p>
+          </div>
+          <div class="param">
+            <img src="cloud.png" alt="Clouds">
+            <p>Clouds</p>
+            <p data-cloud></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  Weather App using Weather API
+  <script src="WeatherAPI.js"></script>
+</body>
+
+</html>
