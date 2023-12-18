@@ -1,5 +1,5 @@
 console.log(" Weather App using weather API ");
-const API_KEY = "8f9340f2bef36bfa3e69bae871352fa6";
+const API_KEY = "";
 
 function renderWeatherInfo(data) {
   //To show this in the UI. Created a new para.
